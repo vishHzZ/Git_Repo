@@ -3,9 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Vishakha Sanjay Patil — Cloud & DevOps Engineer</title>
+  <meta name="description" content="Portfolio of Vishakha Sanjay Patil — Cloud & DevOps Engineer" />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
- <h1>This was 4V </h1>
+ 
+ <div class="container">
+    <header>
+      <div class="brand">
+        <div class="avatar">VS</div>
+        <div>
+          <h1>Vishakha Sanjay Patil</h1>
+          <p class="lead">Cloud & DevOps Engineer — Linux • AWS • CI/CD • Automation</p>
+        </div>
+      </div>
+
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <a class="cta" href="#contact">Hire Me</a>
+      </nav>
+    </header>
+
+    <main class="grid">
+      <!-- Left column: main content -->
+      <section>
+        <div class="card">
+          <h2 id="about">About</h2>
+          <p class="muted">Hi — I'm Vishakha. I build robust, scalable cloud solutions and automate repeatable ops workflows. I enjoy working with Linux, containers, AWS services and CI/CD pipelines to deliver reliable software.</p>
+
+          <div class="section">
+            <strong>Core Skills</strong>
+            <div class="skills">
+              <div class="skill">AWS</div>
+              <div class="skill">Linux</div>
+              <div class="skill">Docker</div>
+              <div class="skill">Kubernetes</div>
+              <div class="skill">Terraform</div>
+              <div class="skill">CI/CD</div>
+              <div class="skill">Bash / Python</div>
+            </div>
+          </div>
+
+          <div class="section">
+            <strong>Recent Projects</strong>
+            <div class="projects" id="projects">
+              <article class="proj">
+                <h3>LEMP Deployment Automation</h3>
+                <p class="muted">Automated provisioning and deployment of LEMP stack on AWS using Terraform + Ansible. Included S3 backups and CI pipeline.</p>
+              </article>
+
+              <article class="proj">
+                <h3>Image Upload App (S3)</h3>
+                <p class="muted">Built a secure PHP app to upload images to S3 with presigned URLs and IAM best practices.</p>
+              </article>
+
+              <article class="proj">
+                <h3>Monitoring & Alerts</h3>
+                <p class="muted">Implemented server and app monitoring using CloudWatch + custom alerts and dashboards.</p>
+              </article>
+
+              <article class="proj">
+                <h3>CI/CD for Microservices</h3>
+                <p class="muted">Designed and configured pipelines for multiple microservices using GitHub Actions and Docker.</p>
+              </article>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="card links">
+          <h2>Open Source & Links</h2>
+          <p class="muted">Explore my public work and connect:</p>
+          <div class="link-list">
+            <a class="social" href="https://github.com/vishHzZ" target="_blank" rel="noopener">GitHub</a>
+            <a class="social" href="https://linkedin.com/in/vishakha-patil" target="_blank" rel="noopener">LinkedIn</a>
+            <a class="social resume" href="#" onclick="downloadResume()">Download Resume ▼</a>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- Right column: sidebar -->
+      <aside>
+        <div class="card">
+          <h3>Contact</h3>
+          <p class="muted">I'm available for freelancing and full-time roles. Let's talk!</p>
+
+          <div class="contact-form" id="contact">
+            <input class="input" placeholder="Your name" id="name">
+            <input class="input" placeholder="Your email" id="email">
+            <textarea class="input" placeholder="Message" id="message" rows="4"></textarea>
+            <button class="btn" onclick="sendMail()">Send Message</button>
+          </div>
+
+          <div class="meta">
+            <p><strong>Email</strong></p>
+            <p class="muted">vishakhapatil11441@gmail.com</p>
+            <p><strong>Location</strong></p>
+            <p class="muted">Sangli, Maharashtra, India</p>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:16px">
+          <h3>Quick Links</h3>
+          <div class="projects small">
+            <a class="proj" href="#">Resume</a>
+            <a class="proj" href="#">Blog</a>
+            <a class="proj" href="#">Contact Form</a>
+          </div>
+        </div>
+
+      </aside>
+    </main>
+
+    <footer>
+      © 2025 Vishakha Sanjay Patil — Built with ❤️
+    </footer>
+  </div>
+  <script>
+    function sendMail(){
+      const name = document.getElementById('name').value || 'Friend';
+      alert('Thanks '+name+'! Message sent (demo).');
+    }
+    function downloadResume(){
+      alert('Resume download demo — add your resume file and link it.');
+    }
+  </script>
 </body>
 </html>
